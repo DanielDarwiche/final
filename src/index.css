@@ -61,6 +61,13 @@ h1 {
   -ms-border-radius:;
   -o-border-radius:;
 }
+ #loading{
+  font-size: 10rem;
+color: black;
+  background-color: yellow;
+  text-align: center;
+
+ }
  
 #repoheader{
   color:black;
@@ -70,7 +77,7 @@ h1 {
 }
 .repoobjects{
   color:black;
-  background: linear-gradient(10deg, rgb(252, 238, 238) 0%, rgba(73, 63, 252.1) 100%);
+  background: linear-gradient(10deg, rgb(252, 238, 238) 0%, rgb(127, 64, 252) 100%);
   text-align: center;
   margin: 1rem auto;  
   padding: 0.5rem 0.5rem ;

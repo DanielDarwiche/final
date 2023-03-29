@@ -1,14 +1,20 @@
   import { useState, useEffect } from 'react';
   import "./index.css";
  
+
+
+  
 function MyRepositories() {
   const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true); // Add a loading state variable
 
   useEffect(() => {
     async function fetchRepos() {
       const response = await fetch('https://api.github.com/users/DanielDarwiche/repos');
       const data = await response.json();
       setRepos(data);
+      setLoading(false); // Set loading to false after data is fetched
+
     }
     fetchRepos();
   }, []);
@@ -16,6 +22,8 @@ let i=1;
   return (
     <div>
       <h1 id="repoheader">My repositories:</h1>
+      {loading ? <h1 id="loading">Loading...</h1> : null} {/* Render loading message when loading is true */}
+ 
       <ul id="repocontainer">
         {repos.map(repo => (
           <li key={repo.id} 
@@ -32,7 +40,6 @@ let i=1;
           <br/>{repo.description == null ? "" : <>Description:<br/></>}<i>
   {repo.description == null ? "" : repo.description}</i>
           <div title={repo.stargazers_count} >
-
           StarGazer: {repo.id % 2 === 0 ? repo.stargazers_count + 3 : 
           repo.stargazers_count + 6}
           </div>
