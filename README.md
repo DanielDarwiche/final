@@ -25,5 +25,5 @@ Some parts of the React library might not work in older browsers but it is ok si
 CSS is used to style the page using a media screen query, so responsive design is written.
 
 ### Conclusion
-This is a simple but effective React web application that demonstrates how to fetch and display data from an API.  
+This is a super simple but effective React web application that demonstrates how to fetch and display data from an API.  
 
