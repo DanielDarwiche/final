@@ -20,7 +20,7 @@ In building this application, several technical choices were made to ensure acce
 ## Web Accessibility and Semantic HTML
 All text displayed on the website have high contrast against the background, so that people with visual impairments can easily read the text. Links have descriptive text, so that users can understand what will happen when they click on the links.
 There is only one HTML file though.
-Semantic tags are marked with HTML tags indicating what the content is( <h1>, <h2>, <ul>, <strong>).
+Semantic tags are marked with HTML tags indicating what the content is .
 Some parts of the React library might not work in older browsers but it is ok since the project was to create a react SPA.
 CSS is used to style the page using a media screen query, so responsive design is written.
 
