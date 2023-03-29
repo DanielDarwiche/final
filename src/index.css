@@ -1,5 +1,5 @@
 h1 {
-  color: blue;
+  color: rgb(110, 94, 254);
 }
 .footer {
   padding: 0 0 0.625rem;
@@ -56,13 +56,36 @@ h1 {
 .nav-links:hover {
   background-color: rgb(110, 94, 254);
   border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
-/* vad gör border ovan*/
-
+ 
+#repoheader{
+  color:black;
+  margin: 0.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.repoobjects{
+  color:black;
+  background: linear-gradient(10deg, rgb(252, 238, 238) 0%, rgba(73, 63, 252.1) 100%);
+  text-align: center;
+  margin: 1rem auto;  
+  padding: 0.5rem 0.5rem ;
+  width:25rem;
+  display: grid;
+  list-style: none;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+#repocontainer{
+  padding-bottom: 3rem;
+}
 .fa-bars {
   color: white;
 }
@@ -133,4 +156,5 @@ h1 {
     color: white;
     font-size: 2rem;
   }
+
 }

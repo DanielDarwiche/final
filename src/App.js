@@ -7,9 +7,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <div >
       <MyRepositories />
-    </div>
       <Footer />
     </div>
   );
